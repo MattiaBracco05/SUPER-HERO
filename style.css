@@ -1,0 +1,40 @@
+.sfondo{
+    /*  
+        #121212
+        #1a1a1a
+    */
+    --colore-1-sfondo: rgb(60, 60, 252);
+    --colore-2-sfondo: blue;
+
+    background: #121212;
+    background: linear-gradient(
+      135deg,
+      var(--colore-1-sfondo) 25%,
+      var(--colore-2-sfondo) 25%,
+      var(--colore-2-sfondo) 50%,
+      var(--colore-1-sfondo) 50%,
+      var(--colore-1-sfondo) 75%,
+      var(--colore-2-sfondo) 75%,
+      var(--colore-2-sfondo)
+    );
+    background-size: 40px 40px;
+  
+    animation: move 4s linear infinite;
+}
+  
+@keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+}
+  
+.b{
+      border: 1px solid black;
+}
+  
+.h-max{
+      height: 100vh;
+}
